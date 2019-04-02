@@ -1,0 +1,29 @@
+[package]
+name = "blackmagic-c2"
+version = "0.0.0"
+
+[dependencies]
+actix-web = "0.7"
+decklink = {git = "https://github.com/theaaf/decklink-rs"}
+slog = "2.4.1"
+slog-term = "2.4.0"
+slog-async = "2.3.0"
+juniper = "0.11.1"
+actix = "0.7"
+serde_json = "1.0.39"
+serde_derive = "1.0.89"
+serde = "1.0.89"
+futures = "0.1.25"
+uuid = {version = "0.7", features = ["v4"]}
+actix_derive = "0.4.0"
+url = "1.7.2"
+rmp-serde = {git = "https://github.com/3Hren/msgpack-rust", rev = "40b3d480b20961e6eeceb416b32bcd0a3383846a"}
+tokio-timer = "0.2.10"
+pnet = "0.22.0"
+libc = "0.2.51"
+ipnetwork = "0.14.0"
+simple-error = "0.1.13"
+gethostname = "0.2.0"
+tokio = "0.1.18"
+slog-stdlog = "3.0.2"
+slog-scope = "4.1.1"

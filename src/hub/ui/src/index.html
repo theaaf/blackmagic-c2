@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Blackmagic Command and Control</title>
+    </head>
+    <body>
+        <div id="app"></div>
+        <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+        <script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
+        <% } %>
+        <script>
+            InitWebApp({
+                apiHost: '<%= apiHost %>',
+                container: document.getElementById('app'),
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "allowSyntheticDefaultImports": true,
+        "alwaysStrict": true,
+        "noErrorTruncation": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "module": "commonjs",
+        "target": "es5",
+        "lib": [
+            "es2015",
+            "dom",
+            "esnext.asynciterable"
+        ],
+        "jsx": "react"
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "types": [
+        "gapi",
+        "gapi.auth2"
+    ]
+}
